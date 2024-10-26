@@ -1,13 +1,13 @@
-# Ignore node_modules in both server, frontend, and client
-server/node_modules
+# Ignore node_modules in both Backend, frontend, and client
+Backend/node_modules
 frontend/node_modules
 client/node_modules
 
-# Ignore environment variable files in both server, frontend, and client
-server/.env*
+# Ignore environment variable files in both Backend, frontend, and client
+Backend/.env*
 frontend/.env*
 client/.env*
-!server/.env.example   # Keep .env.example if you have a sample environment file in server
+!Backend/.env.example   # Keep .env.example if you have a sample environment file in Backend
 !frontend/.env.example # Keep .env.example if you have a sample environment file in frontend
 !client/.env.example   # Keep .env.example if you have a sample environment file in client
 
@@ -16,20 +16,20 @@ frontend/.next
 client/.next
 
 # Ignore build cache
-server/.turbo
+Backend/.turbo
 frontend/.turbo
 client/.turbo
 
 # IDE/editor-specific files
-server/.idea
-server/.vscode
+Backend/.idea
+Backend/.vscode
 frontend/.idea
 frontend/.vscode
 client/.idea
 client/.vscode
 
 # Ignore ESLint cache
-server/.eslintcache
+Backend/.eslintcache
 frontend/.eslintcache
 client/.eslintcache
 
@@ -39,14 +39,14 @@ client/.eslintcache
 # client/tailwind.config.js
 
 # Ignore TypeScript build artifacts (if applicable)
-server/*.tsbuildinfo
+Backend/*.tsbuildinfo
 frontend/*.tsbuildinfo
 client/*.tsbuildinfo
 
 # Logs
-server/npm-debug.log*
-server/yarn-debug.log*
-server/yarn-error.log*
+Backend/npm-debug.log*
+Backend/yarn-debug.log*
+Backend/yarn-error.log*
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
