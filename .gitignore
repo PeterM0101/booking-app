@@ -1,47 +1,50 @@
-# Ignore node_modules in both backend and frontend/client
+# Node modules
+/node_modules
 backend/node_modules
 frontend/node_modules
 client/node_modules
 e2e-tests/node_modules
 
-# Ignore environment variable files
-backend/.env*
-frontend/.env*
-client/.env*
-!backend/.env.example   # Keep .env.example if you have a sample environment file in backend
-!frontend/.env.example # Keep .env.example if you have a sample environment file in frontend
-!client/.env.example   # Keep .env.example if you have a sample environment file in client
+# Environment variable files
+*.env
+*.local
+!.env.example  # Uncomment this if you have example env files you want to keep
 
 # Ignore IDE/editor-specific files
-backend/.idea
-frontend/.idea
-client/.idea
-e2e-tests/.idea
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
 
-# Ignore build output (Next.js) in frontend and client
+# Ignore build output
 frontend/.next
 client/.next
 
-# Ignore ESLint cache
-backend/.eslintcache
-frontend/.eslintcache
-client/.eslintcache
-e2e-tests/.eslintcache
-
 # Ignore Playwright specific files and reports
-e2e-tests/playwright-report
-e2e-tests/test-results
-e2e-tests/.playwright
+e2e-tests/playwright-report/
+e2e-tests/test-results/
+e2e-tests/.playwright/
 
-# Ignore other files in e2e-tests
-e2e-tests/package-lock.json
-e2e-tests/package.json
+# Ignore ESLint cache
+*.eslintcache
 
-# Ignore Playwright configuration file
+# Ignore log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build artifacts
+dist/
+build/
+coverage/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+
+# Ignore specific files in the e2e-tests folder
 e2e-tests/playwright.config.ts
-
-# Ignore logs
-backend/npm-debug.log*
-frontend/npm-debug.log*
-client/npm-debug.log*
-e2e-tests/npm-debug.log*
+e2e-tests/package.json
+e2e-tests/package-lock.json
