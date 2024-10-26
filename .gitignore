@@ -1,0 +1,18 @@
+# Node modules and build output
+frontend/node_modules
+frontend/.next
+frontend/.turbo
+
+# Ignore environment variable files
+frontend/.env*
+!frontend/.env.example  # Keep .env.example if needed
+
+# IDE/editor-specific files
+frontend/.idea
+frontend/.vscode
+
+# Ignore logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
