@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="container mx-auto">
       <Suspense fallback={<p>Loading...</p>}>
-        <GetMessage />
+        {/*<GetMessage />*/}
       </Suspense>
     </main>
   );
