@@ -20,6 +20,7 @@ app.use(cors({
     credentials: true
 }))
 
+// make a new deploying
 // app.use(express.static(path.join(__dirname, "../../frontend/.next")))
 
 app.get('/api/test', async (req: Request, res: Response) =>
